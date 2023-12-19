@@ -147,11 +147,6 @@ if (NOT ZLIB_FOUND)
     include(ZLIB/ZLIB.cmake)
     set(ZLIB_PKG dep_ZLIB)
 endif ()
-set(PNG_PKG "")
-if (NOT PNG_FOUND) 
-    include(PNG/PNG.cmake)
-    set(PNG_PKG dep_PNG)
-endif ()
 set(EXPAT_PKG "")
 if (NOT EXPAT_FOUND) 
     include(EXPAT/EXPAT.cmake)
@@ -206,7 +201,6 @@ set(_dep_list
     dep_CGAL
     dep_OpenSSL
     dep_GLFW
-    ${PNG_PKG}
     ${ZLIB_PKG}
     ${EXPAT_PKG}
     )
