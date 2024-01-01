@@ -154,7 +154,6 @@ if (NOT EXPAT_FOUND)
 endif ()
 
 set(DEP_Boost_COMPONENTS system iostreams filesystem thread log locale regex date_time)
-include(Boost/Boost.cmake)
 
 # The order of includes respects the dependencies between libraries
 include(Cereal/Cereal.cmake)
@@ -188,7 +187,6 @@ include(OCCT/OCCT.cmake)
 include(FREETYPE/FREETYPE.cmake)
 
 set(_dep_list
-    dep_Boost
     dep_TBB
     ${CURL_PKG}
     dep_wxWidgets
