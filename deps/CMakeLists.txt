@@ -182,13 +182,11 @@ if (NOT CURL_FOUND)
     set(CURL_PKG dep_CURL)
 endif ()
 
-include(wxWidgets/wxWidgets.cmake)
 include(OCCT/OCCT.cmake)
 
 set(_dep_list
     dep_TBB
     ${CURL_PKG}
-    dep_wxWidgets
     dep_Cereal
     dep_NLopt
     dep_OpenVDB
