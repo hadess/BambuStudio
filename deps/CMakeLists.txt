@@ -183,7 +183,6 @@ if (NOT CURL_FOUND)
     set(CURL_PKG dep_CURL)
 endif ()
 
-include(TIFF/TIFF.cmake)
 include(wxWidgets/wxWidgets.cmake)
 include(OCCT/OCCT.cmake)
 include(FREETYPE/FREETYPE.cmake)
