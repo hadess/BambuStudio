@@ -159,7 +159,6 @@ set(DEP_Boost_COMPONENTS system iostreams filesystem thread log locale regex dat
 include(Cereal/Cereal.cmake)
 include(Qhull/Qhull.cmake)
 include(GLEW/GLEW.cmake)
-include(GLFW/GLFW.cmake)
 include(OpenCSG/OpenCSG.cmake)
 
 include(TBB/TBB.cmake)
@@ -190,7 +189,6 @@ set(_dep_list
     dep_OpenVDB
     dep_OpenCSG
     dep_CGAL
-    dep_GLFW
     ${ZLIB_PKG}
     ${EXPAT_PKG}
     )
