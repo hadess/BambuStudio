@@ -174,8 +174,6 @@ include(CGAL/CGAL.cmake)
 
 include(NLopt/NLopt.cmake)
 
-include(OpenSSL/OpenSSL.cmake)
-
 set(CURL_PKG "")
 if (NOT CURL_FOUND)
     include(CURL/CURL.cmake)
@@ -192,7 +190,6 @@ set(_dep_list
     dep_OpenVDB
     dep_OpenCSG
     dep_CGAL
-    dep_OpenSSL
     dep_GLFW
     ${ZLIB_PKG}
     ${EXPAT_PKG}
